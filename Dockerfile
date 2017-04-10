@@ -1,4 +1,4 @@
-FROM golang:alpine
+FROM alpine:3.5
 MAINTAINER Jimmy Zelinskie <jimmyzelinskie@gmail.com>
 
 # Install OS-level dependencies.
