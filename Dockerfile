@@ -18,6 +18,8 @@ RUN go install github.com/chihaya/chihaya/cmd/chihaya
 # This makes the container much smaller when using Quay's squashing feature.
 RUN rm -r /usr/local/go
 
+RUN mkdir /config
+
 # Expose a docker interface to our binary.
 EXPOSE 6880 6881
 ENTRYPOINT ["chihaya"]
